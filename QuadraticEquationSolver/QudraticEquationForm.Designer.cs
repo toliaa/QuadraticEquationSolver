@@ -17,6 +17,7 @@ namespace QuadraticEquationSolver
 
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(QudraticEquationForm));
             this.aTextBox = new System.Windows.Forms.TextBox();
             this.bTextBox = new System.Windows.Forms.TextBox();
             this.cTextBox = new System.Windows.Forms.TextBox();
@@ -25,6 +26,7 @@ namespace QuadraticEquationSolver
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // aTextBox
@@ -68,7 +70,7 @@ namespace QuadraticEquationSolver
             this.resultLabel.Location = new System.Drawing.Point(49, 142);
             this.resultLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.resultLabel.Name = "resultLabel";
-            this.resultLabel.Size = new System.Drawing.Size(77, 16);
+            this.resultLabel.Size = new System.Drawing.Size(45, 16);
             this.resultLabel.TabIndex = 4;
             this.resultLabel.Text = "Result";
             // 
@@ -100,11 +102,23 @@ namespace QuadraticEquationSolver
             this.label3.Text = "C:";
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(12, 173);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(142, 16);
+            this.label4.TabIndex = 8;
+            this.label4.Text = "© 2024 Tolia Dripak";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
+            // 
             // QudraticEquationForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(379, 198);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -113,6 +127,7 @@ namespace QuadraticEquationSolver
             this.Controls.Add(this.cTextBox);
             this.Controls.Add(this.bTextBox);
             this.Controls.Add(this.aTextBox);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "QudraticEquationForm";
             this.Text = "Quadratic Equation Solver";
@@ -130,5 +145,6 @@ namespace QuadraticEquationSolver
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
     }
 }
